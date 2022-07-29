@@ -1,4 +1,5 @@
 import logoTodo from './imgs/logo.svg'
+import { FiArchive } from 'react-icons/fi'
 
 import styles from './App.module.css'
 
@@ -87,6 +88,12 @@ export function App() {
             </div>
           </header>
           <div className={styles.taskList}>
+            {tasks.length === 0 && <div className={styles.noTaskDiv}>
+              <FiArchive className={styles.icon} size={56} strokeWidth={1} color={'var(--gray-400)'}/>
+              <strong>Você ainda não tem tarefas cadastradas</strong>
+              <p>Crie tarefas e organize seus itens a fazer</p>
+            </div>}
+
             {tasks.map(task => (
               <Task
                 key={task.id}
