@@ -1,0 +1,22 @@
+.button{
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  width: 1.5rem;
+  height: 1.5rem;
+
+  transition: background 0.2s;
+}
+.button:hover{
+  background: var(--gray-400);
+}
+.button:hover .image{
+  color: var(--danger);
+}
+.button .image{
+  color: var(--gray-300);
+
+  transition: color 0.2s;
+}

@@ -1,0 +1,27 @@
+.task {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  background: var(--gray-500);
+  padding: 16px;
+  
+  border: 1px solid var(--gray-400);
+  border-radius: 8px;
+  
+  font-weight: normal;
+  gap: 0.75rem;
+
+}
+.task span{
+  flex:1
+}
+.task .contentNotChecked {
+  color: var(--gray-100);
+  font-size: 0.875rem;
+}
+
+.task .contentChecked {
+  color: var(--gray-300);
+  text-decoration: line-through;
+  font-size: 0.875rem;
+}

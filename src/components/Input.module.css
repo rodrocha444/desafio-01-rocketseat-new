@@ -10,8 +10,3 @@
 .input::placeholder {
   color: var(--gray-300);
 }
-
-.input:focus{
-  outline: 1px solid var(--purple-dark);
-  
-}

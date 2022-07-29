@@ -5,3 +5,55 @@
 
   background: var(--gray-700);
 }
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: calc(-3rem/2) auto;
+  padding: 0 1rem;
+  max-width: 638px;
+}
+
+.searchBar {
+  display: flex;
+  gap: 0.5rem;
+
+  width: 100%;
+}
+.searchBar .input{
+  flex: 1;
+}
+
+.taskSection{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 4rem;
+}
+
+.taskSection header{
+  display: flex;
+  justify-content: space-between;
+  color:var(--blue);
+  font-size: 0.875rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+.taskSection header span{
+  font-size: 0.75rem;
+  color: var(--gray-200);
+  padding: 0.125rem 0.5rem;
+  background: var(--gray-400);
+  border-radius: 999px;
+}
+
+.taskSection .taskList{
+  border-top: 1px solid var(--gray-400);
+  border-radius: 8px;
+  flex:1;
+  display: flex;
+  flex-direction: column;
+  gap:0.75rem;
+  margin-bottom: 1rem ;
+}
